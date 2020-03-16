@@ -2,7 +2,7 @@
   "name": "deep-ct",
   "version": "0.0.0",
   "description": "DeepCT",
-  "main": "app.js",
+  "main": "main.js",
   "author": {
     "name": ""
   },
