@@ -3,22 +3,66 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Hello World!</title>
+    <title>DeepCT</title>
+    <!-- stylesheet -->
     <link rel="stylesheet" type="text/css" href="css/main.css" />
     <!-- bootstrap -->
     <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" />
 </head>
 
 <body>
-      <h1>Hello World!</h1>
 
-    
-      <!-- electron renderer -->
-      <script src="renderer.js"></script>
+    <!-- wrapper -->
+    <div class="d-flex" id="wrapper">
 
-      <!-- bootstrap and jquery -->
-      <script src="bootstrap/js/bootstrap.min.js"></script>
-      <script src="bootstrap/js/jquery.min.js"></script>
-    
+        <!-- sidebar -->
+        <div class="bg-light border-right" id="sidebar-wrapper">
+            <div class="list-group list-group-flush" id="sidebar-list">
+                <a href="#view" class="list-group-item list-group-item-action bg-light">View an Image</a>
+                <a href="#train" class="list-group-item list-group-item-action bg-light">Train a Model</a>
+                <a href="#import" class="list-group-item list-group-item-action bg-light">Import a Model</a>
+                <a href="#analyze" class="list-group-item list-group-item-action bg-light">Analyze a Scan</a>
+            </div>
+        </div>
+        <!-- end sidebar -->
+
+        <!-- page content -->
+        <div id="page-content-wrapper">
+
+            <div class="container-fluid" id="view">
+                <h2>View an Image</h2>
+                <hr />
+            </div>
+
+            <div class="container-fluid" id="train">
+                <h2>Train a Model</h2>
+                <hr />
+            </div>
+
+            <div class="container-fluid" id="import">
+                <h2>Import a Model</h2>
+                <hr />
+            </div>
+
+            <div class="container-fluid" id="analyze">
+                <h2>Analyze a Scan</h2>
+                <hr />
+            </div>
+        </div>
+        <!-- end page content -->
+
+    </div>
+    <!-- end wrapper -->
+
+    <!-- site js -->
+    <script src="js/site.js"></script>
+
+    <!-- electron renderer -->
+    <script src="renderer.js"></script>
+
+    <!-- bootstrap and jquery -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="bootstrap/js/jquery.min.js"></script>
+
 </body>
 </html>
